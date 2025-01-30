@@ -13,3 +13,42 @@
     background: #f9fafb; /* Light gray */
     border-radius: 0.5rem;
   }
+
+  footer {
+    @apply bg-gray-800 text-white py-10;
+  
+    img {
+      @apply h-12 mx-auto mb-4;
+    }
+  
+    h3 {
+      @apply text-xl font-bold text-center;
+    }
+  
+    p {
+      @apply text-gray-400 mt-2 text-sm text-center;
+    }
+  
+    h4 {
+      @apply text-white font-semibold mb-4;
+    }
+  
+    ul {
+      @apply space-y-2;
+    }
+  
+    a:hover {
+      @apply underline text-pink-500;
+    }
+  
+    @media (max-width: 768px) {
+      footer {
+        .text-center {
+          @apply mb-8;
+        }
+        .grid {
+          @apply grid-cols-2 gap-6;
+        }
+      }
+    }
+  }
