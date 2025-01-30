@@ -1,0 +1,15 @@
+.accordion-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.5); /* Pink shadow */
+  }
+  
+  .accordion-header button:hover {
+    color: #ec4899; /* Pink hover color */
+  }
+  
+  .accordion-body {
+    border-left: 3px solid #ec4899; /* Pink border indicator */
+    padding: 1rem;
+    background: #f9fafb; /* Light gray */
+    border-radius: 0.5rem;
+  }
