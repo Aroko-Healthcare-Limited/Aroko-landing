@@ -1,0 +1,35 @@
+.section-heading {
+    @apply text-3xl font-bold text-center text-gray-800 mb-4;
+  }
+  
+  .section-subtext {
+    @apply text-gray-600 mt-4 text-center max-w-2xl mx-auto;
+  }
+  
+  ul {
+    @apply space-y-4;
+  }
+  
+  ul li {
+    @apply flex items-center text-gray-800;
+  }
+  
+  ul li i {
+    @apply text-pink-500;
+  }
+  
+  ul li span {
+    @apply text-gray-600;
+  }
+  
+  img {
+    @apply rounded-lg shadow-lg;
+  }
+  
+  .overview-heading {
+    @apply text-lg font-bold text-gray-800;
+  }
+  
+  .overview-text {
+    @apply text-gray-600 mt-2;
+  }

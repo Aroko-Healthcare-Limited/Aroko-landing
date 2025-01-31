@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroko Health</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <link src="./assets/css/style.scss" rel="stylesheet">
+    </link>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/app.js"></script>
+
+</head>
+
+<body class="bg-gray-100">
+
+    <header class="bg-white shadow py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="./assets/images/aroko-logo.png" alt="Logo" class="h-10">
+                <!-- <span class="text-lg font-bold text-gray-800">Aroko Healthcare</span> -->
+            </div>
+            <nav class="flex space-x-6">
+                <a href="./index.html" class="text-gray-700 hover:text-blue-500">Home</a>
+                <div class="relative group">
+                    <button class="text-gray-700 hover:text-blue-500">About Us <i class="fa fa-caret-down"></i></button>
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg py-2 w-40">
+                        <a href="./about.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Mission</a>
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Vision</a>
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Board of Directors</a>
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Team Lead</a>
+                    </div>
+                </div>
+                <a href="#" class="text-gray-700 hover:text-blue-500">Blog</a>
+                <a href="#" class="bg-pink-500 text-white rounded-lg px-4 py-2 hover:bg-pink-600">Plans</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="bg-gray-50 py-16">
+        <div class="container mx-auto px-4">
+            <!-- Heading Section -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800">About Aroko Health</h2>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                    Aroko Health is a platform dedicated to providing affordable and reliable HMO plans tailored to meet
+                    the healthcare needs of families, pregnant women, and individuals in rural areas. We believe that
+                    quality healthcare should be accessible to everyone, regardless of location or income. Our plans are
+                    designed to offer comprehensive coverage, ensuring that all our members receive the care they
+                    deserve, no matter where they are. With Aroko Health, you can have peace of mind knowing that your
+                    health and the health of your loved ones are in good hands.
+                </p>
+            </div>
+            <!-- Image Section -->
+            <div class="flex justify-center">
+                <img src="./assets/images/about-image.jpg" alt="About Aroko Health"
+                    class="rounded-lg shadow-lg w-full max-w-4xl">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <h3 class="text-2xl font-bold text-gray-800 mb-8">Overview</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Left Overview Content -->
+                <div>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <i class="fas fa-chevron-right text-pink-500 mr-4"></i>
+                            <span class="font-semibold text-gray-800">Our Mission Statement.</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-chevron-right text-gray-400 mr-4"></i>
+                            <span class="text-gray-600">Our Vision Statement.</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-chevron-right text-gray-400 mr-4"></i>
+                            <span class="text-gray-600">Our Core Values & Initiatives.</span>
+                        </li>
+                    </ul>
+                    <div class="mt-4 text-sm text-gray-500">01/03</div>
+                </div>
+                <!-- Right Overview Content -->
+                <div class="flex items-center space-x-6">
+                    <div>
+                        <h4 class="text-lg font-bold text-gray-800">Our Mission Statement</h4>
+                        <p class="text-gray-600 mt-2">
+                            We offer affordable yearly payment plans for our users.
+                        </p>
+                    </div>
+                    <img src="./assets/images/mission-image.jpg" alt="Doctor" class="rounded-lg shadow-lg w-40 md:w-64">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <!-- Our Quota Section -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800">
+                    Our Quota: Enabling Africa to Reach the SDGs.
+                </h2>
+                <div class="mt-6">
+                    <img src="./assets/images/sdgs-logo.png" alt="SDGs Goals Logo" class="mx-auto mb-6">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-green-500 text-white rounded-lg shadow-lg p-6 text-center">
+                        <h3 class="text-2xl font-bold">3</h3>
+                        <p class="mt-2 font-semibold">Good Health and Well-Being</p>
+                    </div>
+                    <div class="bg-red-500 text-white rounded-lg shadow-lg p-6 text-center">
+                        <h3 class="text-2xl font-bold">8</h3>
+                        <p class="mt-2 font-semibold">Decent Work and Economic Growth</p>
+                    </div>
+                    <div class="bg-blue-500 text-white rounded-lg shadow-lg p-6 text-center">
+                        <h3 class="text-2xl font-bold">17</h3>
+                        <p class="mt-2 font-semibold">Partnerships for the Goals</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonials Section -->
+            <div>
+                <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Let’s Hear From Our Users</h2>
+                <div class="relative">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white rounded-lg shadow-lg p-6 flex items-center space-x-4">
+                            <img src="./assets/images/testimonial-user1.jpg" alt="User" class="w-16 h-16 rounded-full">
+                            <div>
+                                <p class="text-gray-600">
+                                    “I paid for the Aroko Advantage Plan and I got nothing but the absolute best of the
+                                    service I paid for.”
+                                </p>
+                                <h4 class="mt-2 font-bold text-gray-800">Joseph Tolani</h4>
+                                <p class="text-sm text-gray-500">Founder, Women Alive Africa</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-lg p-6 flex items-center space-x-4">
+                            <img src="./assets/images/testimonial-user2.jpg" alt="User" class="w-16 h-16 rounded-full">
+                            <div>
+                                <p class="text-gray-600">
+                                    “Affordable and reliable health care plans. Aroko is simply the best.”
+                                </p>
+                                <h4 class="mt-2 font-bold text-gray-800">Janet Williams</h4>
+                                <p class="text-sm text-gray-500">CEO, Future Women</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Navigation Buttons -->
+                    <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-4">
+                        <button class="p-3 bg-gray-200 rounded-full hover:bg-gray-300 shadow">
+                            <i class="fas fa-chevron-left text-gray-500"></i>
+                        </button>
+                        <button class="p-3 bg-gray-200 rounded-full hover:bg-gray-300 shadow">
+                            <i class="fas fa-chevron-right text-gray-500"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Common Concerns and Helpful Answers</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <p class="text-gray-600">Here is the list of FAQ's about us and how we work. Got more questions?
+                        Feel free to reach out to us.</p>
+                </div>
+                <div>
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeading1">
+                                <button class="accordion-button text-gray-800 font-semibold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true"
+                                    aria-controls="faqCollapse1">
+                                    How can Aroko Health help my business?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse1" class="accordion-collapse collapse show"
+                                aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-gray-600">
+                                    Tested and Trusted by thousands of users, Aroko Health provides reliable access to
+                                    funds. Think of a trusted payment service.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeading2">
+                                <button class="accordion-button collapsed text-gray-800 font-semibold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false"
+                                    aria-controls="faqCollapse2">
+                                    What is Aroko Health?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-gray-600">
+                                    Aroko Health offers affordable and accessible healthcare plans designed to meet your
+                                    needs.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeading3">
+                                <button class="accordion-button collapsed text-gray-800 font-semibold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false"
+                                    aria-controls="faqCollapse3">
+                                    How secure is Aroko Health's platform?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-gray-600">
+                                    Aroko Health's platform uses advanced encryption and secure protocols to ensure data
+                                    privacy and security.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section name="#contact-us" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Get In Touch With Aroko Health</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <p class="text-gray-600">Stay Connected with Aroko Health today. Have questions or just want to say
+                        hi? We’re always a DM away! Reach out to Aroko Health on your favorite social platforms and
+                        let’s make payments smoother together.</p>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" class="text-green-500 text-2xl"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="text-blue-500 text-2xl"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-pink-500 text-2xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-black text-2xl"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" class="text-blue-700 text-2xl"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <form class="bg-white shadow-lg rounded-lg p-6">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 font-semibold mb-2">Name</label>
+                            <input type="text" id="name" class="w-full p-3 border border-gray-300 rounded-lg"
+                                placeholder="John Doe">
+                        </div>
+                        <div class="mb-4">
+                            <label for="phone" class="block text-gray-700 font-semibold mb-2">Phone No</label>
+                            <input type="text" id="phone" class="w-full p-3 border border-gray-300 rounded-lg"
+                                placeholder="+234 000-000-0000">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 font-semibold mb-2">Email address</label>
+                            <input type="email" id="email" class="w-full p-3 border border-gray-300 rounded-lg"
+                                placeholder="Enter email address">
+                        </div>
+                        <button type="submit"
+                            class="w-full py-3 bg-pink-500 text-white rounded-lg hover:bg-pink-600">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-8">
+                <!-- Logo Section -->
+                <div class="mb-6 md:mb-0">
+                    <img src="./assets/images/aroko-logo.png" alt="Logo" class="h-12">
+                </div>
+                <!-- Header Text Section -->
+                <div class="text-center md:text-right md:ml-4">
+                    <h3 class="text-xl font-bold">Join Aroko Health for Comprehensive Healthcare Coverage</h3>
+                    <p class="text-gray-400 mt-2 text-sm">
+                        "Select from affordable HMO plans that fit your needs and get the healthcare you deserve with
+                        Aroko Health."
+                    </p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-sm text-gray-400">
+                <div>
+                    <h4 class="text-white font-semibold mb-4">AROKO HEALTH</h4>
+                    <ul>
+                        <li><a href="#" class="hover:underline">Home</a></li>
+                        <li><a href="#" class="hover:underline">About Us</a></li>
+                        <li><a href="#" class="hover:underline">Terms & Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Link</h4>
+                    <ul>
+                        <li><a href="#" class="hover:underline">FAQ</a></li>
+                        <li><a href="#" class="hover:underline">Careers</a></li>
+                        <li><a href="#" class="hover:underline">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Follow</h4>
+                    <ul>
+                        <li><a href="#" class="hover:underline">Twitter</a></li>
+                        <li><a href="#" class="hover:underline">Instagram</a></li>
+                        <li><a href="#" class="hover:underline">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <ul>
+                        <li>+234-0000-1212</li>
+                        <li><a href="mailto:Arokohealth@gmail.com" class="hover:underline">Arokohealth@gmail.com</a>
+                        </li>
+                        <li><a href="mailto:help@arokohealth.com" class="hover:underline">help@arokohealth.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
