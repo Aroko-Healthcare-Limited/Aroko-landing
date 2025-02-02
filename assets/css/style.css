@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .accordion-button:focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.5); /* Pink shadow */

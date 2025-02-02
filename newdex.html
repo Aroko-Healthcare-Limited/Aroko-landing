@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroko Health</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/consolidated-styles.css">
+    <script src="./assets/js/app.js" defer></script>
+</head>
+
+<body class="bg-gray-100">
+    <!-- Header Section -->
+    <header class="bg-white shadow py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="./assets/images/aroko-logo.png" alt="Logo" class="h-10">
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="/" class="text-gray-700 hover:text-blue-500">Home</a>
+                <div class="relative group">
+                    <button class="text-gray-700 hover:text-blue-500">About Us <i class="fa fa-caret-down"></i></button>
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg py-2 w-40">
+                        <a href="./about.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Mission</a>
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Vision</a>
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Board of Directors</a>
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Team Lead</a>
+                    </div>
+                </div>
+                <a href="#" class="text-gray-700 hover:text-blue-500">Blog</a>
+                <a href="#" class="bg-pink-500 text-white rounded-lg px-4 py-2 hover:bg-pink-600">Plans</a>
+            </nav>
+            <!-- Mobile Nav -->
+            <button id="mobile-menu-toggle" class="md:hidden">
+                <i class="fas fa-bars text-gray-700 text-xl"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden mt-4 md:hidden">
+            <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</a>
+            <a href="./about.html" ><button class="block px-4 py-2 text-gray-700 hover:bg-gray-100">About Us</button></a>
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Blog</a>
+            <a href="#" class="block px-4 py-2 bg-pink-500 text-white rounded-lg text-center hover:bg-pink-600">Plans</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="text-center py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-800">
+                Your <span class="text-pink-500">Health</span>, Our <span class="text-pink-500">Priority!</span>
+            </h1>
+            <p class="text-gray-600 mt-4 text-sm md:text-base max-w-xl mx-auto">
+                Access affordable, reliable healthcare plans designed with you in mind.
+            </p>
+            <button class="mt-6 px-8 py-3 bg-pink-500 text-white rounded-lg shadow-lg hover:bg-pink-600">
+                Choose Plan
+            </button>
+            <div class="mt-8">
+                <video class="mx-auto rounded-lg shadow-lg w-full max-w-lg" controls>
+                    <source src="./assets/videos/hero-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="container mx-auto px-4 py-16">
+        <h2 class="section-heading">Benefits</h2>
+        <p class="section-subtext">Explore the advantages of choosing Aroko Health.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+            <div class="flex items-center space-x-4">
+                <i class="fa fa-check-circle text-pink-500 text-3xl"></i>
+                <div>
+                    <h3 class="overview-heading">Affordable Health Care</h3>
+                    <p class="overview-text">Comprehensive Health Care coverage for you and your family.</p>
+                </div>
+            </div>
+            <div>
+                <img src="./assets/images/benefit-image-1.jpg" alt="Affordable Healthcare" class="rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="bg-gray-50 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="section-heading">Find the Right Plan for Your Health</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+                <!-- Pricing Card -->
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-lg font-bold">Aroko Essential Plan</h3>
+                    <p class="text-gray-500">₦12,000/year</p>
+                    <ul class="space-y-2 mt-4">
+                        <li class="flex items-center"><i class="fa fa-check text-pink-500"></i> Specialist consultation</li>
+                        <li class="flex items-center"><i class="fa fa-check text-pink-500"></i> Basic telemedicine</li>
+                        <li class="flex items-center"><i class="fa fa-check text-pink-500"></i> Emergency room visits</li>
+                    </ul>
+                    <button class="mt-6 px-6 py-3 bg-pink-500 text-white rounded-lg hover:bg-pink-600">
+                        Buy Plan
+                    </button>
+                </div>
+                <!-- Other cards omitted for brevity -->
+                 <!-- Plan 2 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 relative">
+                <h3 class="text-lg font-semibold text-gray-700">Aroko Advantage Plan</h3>
+                <p class="text-gray-600 mt-2 font-bold">N500 / Month</p>
+                <p class="text-gray-600">Inpatient, Outpatient, Pharmacy</p>
+                <ul class="list-disc mt-4 ml-6 text-gray-600 space-y-2">
+                    <li>Aroko Benefits: Essential Care + Specialist Access</li>
+                    <li>Enhanced telemedicine</li>
+                    <li>Advanced diagnostic imaging</li>
+                    <li>Advanced laboratory tests</li>
+                    <li>Private or semi-private rooms</li>
+                    <li>Basic surgical procedures</li>
+                    <li>Cancer care</li>
+                    <li>Renal Care</li>
+                </ul>
+                <button class="mt-6 px-6 py-2 bg-pink-500 text-white rounded-lg shadow-lg hover:bg-pink-600">Buy Plan</button>
+                <span class="absolute top-3 right-3 text-2xl font-bold text-gray-400">2</span>
+            </div>
+            <!-- Plan 3 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 relative">
+                <h3 class="text-lg font-semibold text-gray-700">Aroko Premium Plan</h3>
+                <p class="text-gray-600 mt-2 font-bold">N500 / Month</p>
+                <p class="text-gray-600">Inpatient, Outpatient, Pharmacy</p>
+                <ul class="list-disc mt-4 ml-6 text-gray-600 space-y-2">
+                    <li>Aroko Benefits: Advantage Care + Optical Care</li>
+                    <li>Dental Care</li>
+                    <li>Obstetrics Care</li>
+                    <li>ICU Services</li>
+                    <li>Physiotherapy</li>
+                    <li>Infertility Care</li>
+                    <li>Childhood Immunization</li>
+                    <li>Neonatal Care</li>
+                    <li>Wellness Facilities</li>
+                    <li>Mental Health Services</li>
+                    <li>HIV/AIDS Care</li>
+                </ul>
+                <button class="mt-6 px-6 py-2 bg-pink-500 text-white rounded-lg shadow-lg hover:bg-pink-600">Buy Plan</button>
+                <span class="absolute top-3 right-3 text-2xl font-bold text-gray-400">3</span>
+            </div>
+            <!-- Plan 4 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 relative">
+                <h3 class="text-lg font-semibold text-gray-700">Aroko More Plan</h3>
+                <p class="text-gray-600 mt-2 font-bold">N500 / Month</p>
+                <p class="text-gray-600">Inpatient, Outpatient, Pharmacy</p>
+                <ul class="list-disc mt-4 ml-6 text-gray-600 space-y-2">
+                    <li>Aroko Benefits: Premium Care + Additional Services</li>
+                    <li>Comprehensive coverage for children</li>
+                    <li>Neonatal intensive care</li>
+                </ul>
+                <button class="mt-6 px-6 py-2 bg-pink-500 text-white rounded-lg shadow-lg hover:bg-pink-600">Buy Plan</button>
+                <span class="absolute top-3 right-3 text-2xl font-bold text-gray-400">4</span>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-10">
+                <img src="./assets/images/aroko-logo.png" alt="Logo" class="h-10">
+                <p class="text-gray-400 max-w-lg">
+                    "Join Aroko Health for Comprehensive Healthcare Coverage tailored to your needs."
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-sm text-gray-400">
+                <!-- Footer content -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">AROKO HEALTH</h4>
+                    <ul>
+                        <li><a href="#" class="hover:underline">Home</a></li>
+                        <li><a href="#" class="hover:underline">About Us</a></li>
+                        <li><a href="#" class="hover:underline">Terms & Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Link</h4>
+                    <ul>
+                        <li><a href="#" class="hover:underline">FAQ</a></li>
+                        <li><a href="#" class="hover:underline">Careers</a></li>
+                        <li><a href="#" class="hover:underline">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Follow</h4>
+                    <ul>
+                        <li><a href="#" class="hover:underline">Twitter</a></li>
+                        <li><a href="#" class="hover:underline">Instagram</a></li>
+                        <li><a href="#" class="hover:underline">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <ul>
+                        <li>+234-0000-1212</li>
+                        <li><a href="mailto:Arokohealth@gmail.com" class="hover:underline">Arokohealth@gmail.com</a>
+                        </li>
+                        <li><a href="mailto:help@arokohealth.com" class="hover:underline">help@arokohealth.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        document.getElementById('mobile-menu-toggle').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS 1 */
+.section-heading {
+    @apply text-3xl font-bold text-center text-gray-800 mb-4;
+}
+  
+.section-subtext {
+    @apply text-gray-600 mt-4 text-center max-w-2xl mx-auto;
+}
+  
+ul {
+    @apply space-y-4;
+}
+  
+ul li {
+    @apply flex items-center text-gray-800;
+}
+  
+ul li i {
+    @apply text-pink-500;
+}
+  
+ul li span {
+    @apply text-gray-600;
+}
+  
+img {
+    @apply rounded-lg shadow-lg;
+}
+  
+.overview-heading {
+    @apply text-lg font-bold text-gray-800;
+}
+  
+.overview-text {
+    @apply text-gray-600 mt-2;
+}
+
+/* CSS 2 */
+body {
+    @apply bg-gray-100;
+}
+
+header {
+    @apply bg-white shadow py-4;
+}
+
+h1 {
+    @apply text-center leading-tight;
+}
+
+section {
+    @apply py-16;
+}
+
+video {
+    @apply rounded-lg shadow-lg;
+}
+
+button {
+    @apply px-6 py-3 bg-pink-500 text-white rounded-lg shadow-lg hover:bg-pink-600 transition duration-300;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        @apply text-3xl;
+    }
+    button {
+        @apply w-full text-sm;
+    }
+    video {
+        @apply w-full max-w-full;
+    }
+}
+
+@media (max-width: 640px) {
+    h1 {
+        @apply text-2xl;
+    }
+    p {
+        @apply text-sm;
+    }
+    img {
+        @apply w-full;
+    }
+}
+
+/* CSS 3 */
+.accordion-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.5); /* Pink shadow */
+}
+
+.accordion-header button:hover {
+    color: #ec4899; /* Pink hover color */
+}
+
+.accordion-body {
+    border-left: 3px solid #ec4899; /* Pink border indicator */
+    padding: 1rem;
+    background: #f9fafb; /* Light gray */
+    border-radius: 0.5rem;
+}
+
+footer {
+    @apply bg-gray-800 text-white py-10;
+  
+    img {
+        @apply h-12 mx-auto mb-4;
+    }
+  
+    h3 {
+        @apply text-xl font-bold text-center;
+    }
+  
+    p {
+        @apply text-gray-400 mt-2 text-sm text-center;
+    }
+  
+    h4 {
+        @apply text-white font-semibold mb-4;
+    }
+  
+    ul {
+        @apply space-y-2;
+    }
+  
+    a:hover {
+        @apply underline text-pink-500;
+    }
+  
+    @media (max-width: 768px) {
+        footer {
+            .text-center {
+                @apply mb-8;
+            }
+            .grid {
+                @apply grid-cols-2 gap-6;
+            }
+        }
+    }
+}
+
+/* CSS 4 */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+}
+
+header {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+    nav a {
+        transition: color 0.3s ease;
+        &:hover {
+            color: #1d4ed8; /* Blue */
+        }
+    }
+}
+
+button {
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    &:hover {
+        transform: scale(1.05);
+        background-color: darken(#ec4899, 10%); /* Slightly darker pink */
+    }
+}
+
+section {
+    h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 1.875rem; /* 3xl */
+    }
+}
+
+.accordion {
+    @apply space-y-4;
+  
+    .accordion-header {
+        @apply text-lg font-semibold text-gray-800 cursor-pointer;
+    }
+  
+    .accordion-button {
+        @apply bg-white border-none py-3 px-4 shadow-sm rounded-md text-left w-full transition-all duration-300;
+        &:hover {
+            @apply bg-gray-100 text-pink-500;
+        }
+    }
+  
+    .accordion-collapse {
+        @apply overflow-hidden transition-all duration-300;
+    }
+  
+    .accordion-body {
+        @apply bg-gray-50 px-4 py-2 rounded-md shadow-inner text-gray-600;
+    }
+}
