@@ -1,0 +1,141 @@
+body {
+    background-color: #f8f9fa;
+}
+.plans-section {
+    padding: 60px 0;
+}
+.plans-section h2 {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.plan-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    overflow: hidden;
+}
+.plan-card {
+    flex: 0 0 30%; /* Ensure three cards fit */
+    max-width: 30%;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out;
+}
+.plan-card h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.plan-card p {
+    margin: 0;
+}
+.plan-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 15px 0;
+}
+.plan-details {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+.btn-buy {
+    background-color: #ff6699;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.btn-buy:hover {
+    background-color: #ff3366;
+}
+ul.plan-features {
+    padding-left: 20px;
+    font-size: 14px;
+}
+ul.plan-features li {
+    margin-bottom: 5px;
+    color: #333;
+}
+.carousel-controls {
+    text-align: center;
+    margin-top: 20px;
+}
+.carousel-button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+.carousel-button:hover {
+    color: #ff6699;
+}
+
+/* Footer Styling */
+.footer-section {
+    background-color: #2b3d50; /* Matches the dark background from the reference */
+    color: #fff;
+}
+
+.footer-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left; /* Align Aroko Health Title to the left */
+}
+
+.footer-section hr {
+    border: none;
+    border-top: 1px solid #fff;
+    width: 100%; /* Full width underline */
+}
+
+.footer-section h6 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-section ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ff6699; /* Add hover effect */
+}
+
+.footer-section img {
+    max-height: 100px; /* Increased logo size for emphasis */
+}
+
+.footer-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #c0c0c0;
+}
