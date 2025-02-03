@@ -80,6 +80,125 @@ ul.plan-features li {
     color: #ff6699;
 }
 
+/* Maps Section */
+.global-health {
+    background-color: #f8f9fa;
+}
+
+.global-health h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.map-container img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* SDG and Testimonials */
+.sdg-section {
+    background-color: #f8f9fa;
+}
+
+.sdg-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left; /* Align text to the left */
+    margin-bottom: 20px;
+}
+
+.sdg-section img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimony */
+.user-feedback {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.user-feedback h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.slider-wrapper {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 15px;
+}
+
+.testimonial-card {
+    min-width: 48%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-image {
+    max-width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testimonial-content {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.quote {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.1);
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.slider-btn:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.left-btn {
+    left: -10px;
+}
+
+.right-btn {
+    right: -10px;
+}
+
 /* One Section */
 .account-section {
     background-color: #f8f9fa;
