@@ -44,24 +44,25 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Mobile Navigation Toggle
-    const menuToggle = document.getElementById("mobile-menu-toggle");
-    const mobileMenu = document.getElementById("mobile-menu");
+    // const menuToggle = document.getElementById("mobile-menu-toggle");
+    // const mobileMenu = document.getElementById("mobile-menu");
 
-    if (menuToggle && mobileMenu) {
-        menuToggle.addEventListener("click", () => {
-            mobileMenu.classList.toggle("hidden");
-        });
+    // if (menuToggle && mobileMenu) {
+    //     menuToggle.addEventListener("click", () => {
+    //         mobileMenu.classList.toggle("hidden");
+    //     });
 
-        // Close the menu on link click
-        const menuLinks = mobileMenu.querySelectorAll("a");
-        menuLinks.forEach((link) => {
-            link.addEventListener("click", () => {
-                mobileMenu.classList.add("hidden");
-            });
-        });
-    } else {
-        console.error("Mobile menu toggle or menu element not found!");
-    }
+    //     // Close the menu on link click
+    //     const menuLinks = mobileMenu.querySelectorAll("a");
+    //     menuLinks.forEach((link) => {
+    //         link.addEventListener("click", () => {
+    //             mobileMenu.classList.add("hidden");
+    //         });
+    //     });
+    // } else {
+    //     console.error("Mobile menu toggle or menu element not found!");
+    // }
+    
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -127,3 +128,18 @@ document.addEventListener("DOMContentLoaded", () => {
     // Initialize content
     updateContent(currentIndex);
   });
+
+
+    // Toggle mobile menu
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const aboutToggle = document.getElementById('mobile-about-toggle');
+    const aboutMenu = document.getElementById('mobile-about-menu');
+
+    menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    aboutToggle.addEventListener('click', () => {
+        aboutMenu.classList.toggle('hidden');
+    });
