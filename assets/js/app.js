@@ -26,22 +26,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   
     // Smooth Scrolling
-    const navLinks = document.querySelectorAll("nav a");
-    navLinks.forEach((link) => {
-        link.addEventListener("click", (e) => {
-            e.preventDefault();
-            const targetId = e.target.getAttribute("href");
-            if (targetId && targetId.startsWith("#")) {
-                const target = document.querySelector(targetId);
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: "smooth",
-                        block: "start",
-                    });
-                }
-            }
-        });
-    });
+    // const navLinks = document.querySelectorAll("nav a");
+    // navLinks.forEach((link) => {
+    //     link.addEventListener("click", (e) => {
+    //         e.preventDefault();
+    //         const targetId = e.target.getAttribute("href");
+    //         if (targetId && targetId.startsWith("#")) {
+    //             const target = document.querySelector(targetId);
+    //             if (target) {
+    //                 target.scrollIntoView({
+    //                     behavior: "smooth",
+    //                     block: "start",
+    //                 });
+    //             }
+    //         }
+    //     });
+    // });
 
     // Mobile Navigation Toggle
     // const menuToggle = document.getElementById("mobile-menu-toggle");
