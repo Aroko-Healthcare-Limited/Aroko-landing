@@ -24,110 +24,79 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
-  
-    // Smooth Scrolling
-    // const navLinks = document.querySelectorAll("nav a");
-    // navLinks.forEach((link) => {
-    //     link.addEventListener("click", (e) => {
-    //         e.preventDefault();
-    //         const targetId = e.target.getAttribute("href");
-    //         if (targetId && targetId.startsWith("#")) {
-    //             const target = document.querySelector(targetId);
-    //             if (target) {
-    //                 target.scrollIntoView({
-    //                     behavior: "smooth",
-    //                     block: "start",
-    //                 });
-    //             }
-    //         }
-    //     });
-    // });
 
-    // Mobile Navigation Toggle
-    // const menuToggle = document.getElementById("mobile-menu-toggle");
-    // const mobileMenu = document.getElementById("mobile-menu");
-
-    // if (menuToggle && mobileMenu) {
-    //     menuToggle.addEventListener("click", () => {
-    //         mobileMenu.classList.toggle("hidden");
-    //     });
-
-    //     // Close the menu on link click
-    //     const menuLinks = mobileMenu.querySelectorAll("a");
-    //     menuLinks.forEach((link) => {
-    //         link.addEventListener("click", () => {
-    //             mobileMenu.classList.add("hidden");
-    //         });
-    //     });
-    // } else {
-    //     console.error("Mobile menu toggle or menu element not found!");
-    // }
-    
 });
 
+// Benefits Section
 document.addEventListener("DOMContentLoaded", () => {
     const benefits = [
-      {
-        title: "Affordable Health Care",
-        description: "We offer affordable yearly payment plans for our users.",
-        image: "./assets/images/images/doctor2.jpg",
-      },
-      {
-        title: "Preventive & Wellness Service",
-        description: "Comprehensive preventive health services.",
-        image: "./assets/images/images/preventive.jpg",
-      },
-      {
-        title: "Telemedicine",
-        description: "Access to doctors anytime, anywhere.",
-        image: "./assets/images/images/telemedicine.jpg",
-      },
-      {
-        title: "Specialist Access",
-        description: "Care from specialists when needed.",
-        image: "./assets/images/images/specialist.jpg",
-      },
+        {
+            title: "Affordable Health Care",
+            description: "We offer affordable yearly payment plans for our users.",
+            image: "./assets/images/images/doctor2.jpg",
+        },
+        {
+            title: "Preventive & Wellness Service",
+            description: "Comprehensive preventive health services.",
+            image: "./assets/images/images/preventive.png",
+        },
+        {
+            title: "Telemedicine",
+            description: "Access to doctors anytime, anywhere.",
+            image: "./assets/images/images/telemedicine.jpg",
+        },
+        {
+            title: "Specialist Access",
+            description: "Care from specialists when needed.",
+            image: "./assets/images/images/specialist.jpg",
+        },
     ];
-  
+
     let currentIndex = 0;
-  
+
+    const progressText = document.querySelector(".progress-text");
+    const progressBar = document.querySelector(".progress-bar");
+    const cardTitle = document.querySelector(".card-title");
+    const cardDescription = document.querySelector(".card-description");
+    const cardImage = document.querySelector(".card-benefit-image");
+    const benefitItems = document.querySelectorAll(".benefit-item");
+
     const updateContent = (index) => {
-      document.querySelector(".progress-text").textContent = `0${index + 1}/04`;
-      document.querySelector(".progress-bar").style.width = `${(index + 1) * 25}%`;
-  
-      document.querySelector(".card-title").textContent = benefits[index].title;
-      document.querySelector(".card p").textContent = benefits[index].description;
-      document.querySelector(".card img").src = benefits[index].image;
-  
-      document.querySelectorAll(".benefit-item").forEach((item, idx) => {
-        if (idx === index) {
-          item.classList.add("active");
-        } else {
-          item.classList.remove("active");
-        }
-      });
+        // Update progress text and bar
+        progressText.textContent = `0${index + 1}/04`;
+        progressBar.style.width = `${(index + 1) * 25}%`;
+
+        // Update card content
+        const currentBenefit = benefits[index];
+        cardTitle.textContent = currentBenefit.title;
+        cardDescription.textContent = currentBenefit.description;
+        cardImage.src = currentBenefit.image;
+
+        // Highlight the active benefit item
+        benefitItems.forEach((item, idx) => {
+            const arrow = item.querySelector("i");
+            if (idx === index) {
+                arrow.classList.replace("text-transparent", "text-black");
+                item.classList.add("active");
+            } else {
+                arrow.classList.replace("text-black", "text-transparent");
+                item.classList.remove("active");
+            }
+        });
     };
-  
-    document.querySelectorAll(".benefit-item").forEach((item, index) => {
-      item.addEventListener("click", () => {
-        currentIndex = index;
-        updateContent(currentIndex);
-      });
+
+    // Add click event listeners to benefit items
+    benefitItems.forEach((item, index) => {
+        item.addEventListener("click", (event) => {
+            event.preventDefault();
+            currentIndex = index;
+            updateContent(currentIndex);
+        });
     });
-  
-    // Scroll Event
-    // document.addEventListener("wheel", (event) => {
-    //   if (event.deltaY > 0) {
-    //     currentIndex = (currentIndex + 1) % benefits.length;
-    //   } else {
-    //     currentIndex = (currentIndex - 1 + benefits.length) % benefits.length;
-    //   }
-    //   updateContent(currentIndex);
-    // });
-  
+
     // Initialize content
     updateContent(currentIndex);
-  });
+});
 
 
     // Toggle mobile menu
@@ -142,4 +111,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
     aboutToggle.addEventListener('click', () => {
         aboutMenu.classList.toggle('hidden');
+    });
+
+
+    // Plans 
+    let pageNumber = 1;
+    let maxPages = 4;
+
+    document.getElementById('nextBtn').addEventListener('click', () => {
+        if (pageNumber < maxPages) {
+            pageNumber++;
+            document.getElementById('pageNumber').textContent = pageNumber;
+        }
+    });
+
+    document.getElementById('prevBtn').addEventListener('click', () => {
+        if (pageNumber > 1) {
+            pageNumber--;
+            document.getElementById('pageNumber').textContent = pageNumber;
+        }
     });

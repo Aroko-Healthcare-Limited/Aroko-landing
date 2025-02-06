@@ -258,3 +258,18 @@ ul li {
 .card img {
     @apply rounded-lg shadow-lg w-full h-full object-cover;
 }
+
+/* Testimonial */
+
+.testimonial-card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.stars {
+    margin-top: 6px;
+}
+.stars i {
+    color: gold;
+}
