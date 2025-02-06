@@ -83,18 +83,72 @@
     </div>
 </section>
 
-<section class="container mx-auto px-4 py-16">
-    <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Benefits</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-        <div class="flex items-center">
-            <i class="fa fa-check-circle text-pink-500 text-3xl mr-4"></i>
+<section class="bg-gray-50 py-16">
+    <div class="container mx-auto px-4">
+        <!-- Section Title -->
+        <div class="flex items-center justify-between mb-12">
             <div>
-                <h3 class="text-xl font-semibold text-gray-700">Affordable Health Care</h3>
-                <p class="text-gray-600">Comprehensive Health Care coverage.</p>
+                <h2 class="text-5xl font-bold text-gray-800 uppercase">Benefits</h2>
+                <div class="relative w-full mt-2 flex items-center">
+                    <div class="relative bg-gray-300 h-1 w-full"></div>
+                    <div class="absolute bg-gray-800 h-1 w-1/4 progress-bar"></div>
+                    <span class="absolute right-0 top-0 text-gray-500 text-lg progress-text">01/04</span>
+                </div>
             </div>
         </div>
-        <div class="flex items-center">
-            <img src="./assets/images/images/doctor2.jpg" class="rounded-lg shadow-lg" alt="Doctor">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <!-- Left Content -->
+            <div>
+                <ul class="space-y-6">
+                    <li class="flex items-center benefit-item" data-index="0">
+                        <i class="fa fa-arrow-right text-black text-3xl mr-4"></i>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800">Affordable Health Care</h3>
+                            <p class="text-gray-600">Comprehensive Health Care coverage.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-center benefit-item" data-index="1">
+                        <i class="fa fa-circle text-gray-300 text-2xl mr-4"></i>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-gray-700">Preventive & Wellness Service</h3>
+                            <p class="text-gray-600">Comprehensive preventive health services.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-center benefit-item" data-index="2">
+                        <i class="fa fa-circle text-gray-300 text-2xl mr-4"></i>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-gray-700">Telemedicine</h3>
+                            <p class="text-gray-600">Access to doctors anytime, anywhere.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-center benefit-item" data-index="3">
+                        <i class="fa fa-circle text-gray-300 text-2xl mr-4"></i>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-gray-700">Specialist Access</h3>
+                            <p class="text-gray-600">Care from specialists when needed.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right Content -->
+            <div>
+                <div class="flex bg-white rounded-lg shadow-lg" style="width: 600px; height: 361px;">
+                    <div class="flex flex-col h-full p-4">
+                        <div class="flex flex-col justify-start">
+                            <h4 class="card-title text-2xl font-bold">Affordable Health Care</h4> <!-- Adjusting size and boldness -->
+                        </div>
+                        <div class="mt-auto">
+                            <p class="text-gray-600 text-base">We offer affordable yearly payment plans for our users.</p> <!-- Adjusting size -->
+                        </div>
+                    </div>
+                    <!-- Right Side for Image -->
+                    <div class="flex-none w-[55%] h-full">
+                        <img src="./assets/images/images/doctor2.jpg" alt="Doctor" class="rounded-lg shadow-lg w-full h-full object-cover" style="height:inherit" />
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -129,7 +183,7 @@
             <!-- Plan 2 -->
             <div class="bg-white shadow-lg rounded-lg p-6 relative">
                 <h3 class="text-lg font-semibold text-gray-700">Aroko Advantage Plan</h3>
-                <p class="text-gray-600 mt-2 font-bold">N500 / Month</p>
+                <p class="text-gray-600 mt-2 font-bold">N22,000/Annually</p>
                 <p class="text-gray-600">Inpatient, Outpatient, Pharmacy</p>
                 <ul class="list-disc mt-4 ml-6 text-gray-600 space-y-2">
                     <li>Aroko Benefits: Essential Care + Specialist Access</li>
@@ -150,7 +204,7 @@
             <!-- Plan 3 -->
             <div class="bg-white shadow-lg rounded-lg p-6 relative">
                 <h3 class="text-lg font-semibold text-gray-700">Aroko Premium Plan</h3>
-                <p class="text-gray-600 mt-2 font-bold">N500 / Month</p>
+                <p class="text-gray-600 mt-2 font-bold">N35,000/Annually</p>
                 <p class="text-gray-600">Inpatient, Outpatient, Pharmacy</p>
                 <ul class="list-disc mt-4 ml-6 text-gray-600 space-y-2">
                     <li>Aroko Benefits: Advantage Care + Optical Care</li>
@@ -173,6 +227,13 @@
 
             <!-- Plan 4 -->
             <div class="bg-white shadow-lg rounded-lg p-6 relative">
+                <h3 class="text-lg font-semibold text-gray-700">Aroko MomCare</h3>
+                <p class="text-gray-600 mt-2 font-bold">Coming Soon</p>
+                <span class="absolute top-3 right-3 text-2xl font-bold text-gray-400">4</span>
+            </div>
+
+            <!-- 
+            <div class="bg-white shadow-lg rounded-lg p-6 relative">
                 <h3 class="text-lg font-semibold text-gray-700">Aroko More Plan</h3>
                 <p class="text-gray-600 mt-2 font-bold">N500 / Month</p>
                 <p class="text-gray-600">Inpatient, Outpatient, Pharmacy</p>
@@ -186,6 +247,7 @@
                 </button>
                 <span class="absolute top-3 right-3 text-2xl font-bold text-gray-400">4</span>
             </div>
+            -->
         </div>
         <!-- <div class="flex justify-center items-center mt-8 space-x-4">
             <button class="p-2 rounded-full bg-gray-200 hover:bg-gray-300 shadow-md transition duration-300">
@@ -221,7 +283,7 @@
             <!-- <img src="https://via.placeholder.com/150" alt="Goal 3" class="h-32">
             <img src="https://via.placeholder.com/150" alt="Goal 8" class="h-32">
             <img src="https://via.placeholder.com/150" alt="Goal 17" class="h-32"> -->
-            <img src="./assets/images/images/sdg-grouped.png" alt="">
+            <img src="./assets/images/sdg/SDG_Poster.png" alt="">
         </div>
     </div>
 </section>
@@ -231,14 +293,12 @@
         <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">What Our Users Say</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div class="bg-white shadow-lg rounded-lg p-6 text-center">
-                <img src="./assets/images/images/black-woman-1.png" alt="User" class="mx-auto rounded-full">
-                <p class="text-gray-600 mt-4">"Aroko Health has been a game-changer for my family!"</p>
-                <strong class="text-gray-800">- Jane Doe</strong>
+                <p class="text-gray-600 mt-4 italic">"Aroko Health has been a game-changer for my family!"</p>
+                <strong class="text-gray-800 block mt-4">- Jane Doe</strong>
             </div>
             <div class="bg-white shadow-lg rounded-lg p-6 text-center">
-                <img src="./assets/images/images/black-woman-1.png" alt="User" class="mx-auto rounded-full">
-                <p class="text-gray-600 mt-4">"Affordable and reliable healthcare services."</p>
-                <strong class="text-gray-800">- John Smith</strong>
+                <p class="text-gray-600 mt-4 italic">"Affordable and reliable healthcare services."</p>
+                <strong class="text-gray-800 block mt-4">- John Smith</strong>
             </div>
         </div>
     </div>

@@ -63,3 +63,67 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error("Mobile menu toggle or menu element not found!");
     }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const benefits = [
+      {
+        title: "Affordable Health Care",
+        description: "We offer affordable yearly payment plans for our users.",
+        image: "./assets/images/images/doctor2.jpg",
+      },
+      {
+        title: "Preventive & Wellness Service",
+        description: "Comprehensive preventive health services.",
+        image: "./assets/images/images/preventive.jpg",
+      },
+      {
+        title: "Telemedicine",
+        description: "Access to doctors anytime, anywhere.",
+        image: "./assets/images/images/telemedicine.jpg",
+      },
+      {
+        title: "Specialist Access",
+        description: "Care from specialists when needed.",
+        image: "./assets/images/images/specialist.jpg",
+      },
+    ];
+  
+    let currentIndex = 0;
+  
+    const updateContent = (index) => {
+      document.querySelector(".progress-text").textContent = `0${index + 1}/04`;
+      document.querySelector(".progress-bar").style.width = `${(index + 1) * 25}%`;
+  
+      document.querySelector(".card-title").textContent = benefits[index].title;
+      document.querySelector(".card p").textContent = benefits[index].description;
+      document.querySelector(".card img").src = benefits[index].image;
+  
+      document.querySelectorAll(".benefit-item").forEach((item, idx) => {
+        if (idx === index) {
+          item.classList.add("active");
+        } else {
+          item.classList.remove("active");
+        }
+      });
+    };
+  
+    document.querySelectorAll(".benefit-item").forEach((item, index) => {
+      item.addEventListener("click", () => {
+        currentIndex = index;
+        updateContent(currentIndex);
+      });
+    });
+  
+    // Scroll Event
+    // document.addEventListener("wheel", (event) => {
+    //   if (event.deltaY > 0) {
+    //     currentIndex = (currentIndex + 1) % benefits.length;
+    //   } else {
+    //     currentIndex = (currentIndex - 1 + benefits.length) % benefits.length;
+    //   }
+    //   updateContent(currentIndex);
+    // });
+  
+    // Initialize content
+    updateContent(currentIndex);
+  });

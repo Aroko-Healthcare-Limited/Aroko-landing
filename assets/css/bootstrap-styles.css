@@ -154,24 +154,18 @@ ul.plan-features li {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.testimonial-image {
-    max-width: 80px;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-.testimonial-content {
-    flex: 1;
-    margin-left: 20px;
-}
-
-.quote {
-    font-size: 16px;
+.testimonial-card p {
+    margin: 0;
     line-height: 1.6;
+}
+
+.testimonial-card .quote {
+    font-size: 16px;
+    line-height: 1.8;
 }
 
 .slider-btn {

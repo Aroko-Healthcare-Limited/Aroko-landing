@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -201,4 +200,61 @@ section {
     .accordion-body {
         @apply bg-gray-50 px-4 py-2 rounded-md shadow-inner text-gray-600;
     }
+}
+
+/* Section Title and Progress Bar */
+.section-title {
+    @apply text-4xl font-bold text-gray-800;
+  }
+  
+  /* Progress Bar */
+  .progress-bar {
+    transition: width 0.3s ease;
+  }
+
+  .progress-bar {
+    @apply h-1 bg-gray-800 w-32;
+  }
+  
+  .progress-text {
+    @apply text-gray-500 text-lg;
+  }
+  
+  
+
+/* Benefits List */
+ul li {
+    cursor: pointer;
+  }
+  ul li.active i {
+    @apply text-black text-3xl;
+  }
+  ul li.active div h3 {
+    @apply text-gray-800 font-bold;
+  }
+  ul li:not(.active) i {
+    @apply text-transparent text-3xl;
+  }
+  ul li:not(.active) div h3 {
+    @apply text-gray-700 font-semibold;
+  }
+  
+
+/* Right Content Card */
+.card {
+    @apply relative bg-white rounded-lg shadow-lg;
+}
+
+.card-title {
+    @apply text-2xl font-bold text-gray-800;
+    font-size: 1.5rem; /* Adjust size as needed */
+    font-weight: bold;
+}
+
+.card p {
+    @apply text-sm text-gray-600 mt-1;
+}
+
+.card img {
+    @apply rounded-lg shadow-lg w-full h-full object-cover;
 }
