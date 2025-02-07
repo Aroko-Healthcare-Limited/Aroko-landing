@@ -1,31 +1,33 @@
+// FAQ Accordion Animation
 document.addEventListener("DOMContentLoaded", () => {
-    // FAQ Accordion Animation
     const accordions = document.querySelectorAll(".accordion-button");
   
     accordions.forEach((accordion) => {
-        accordion.addEventListener("click", () => {
-            // Toggle clicked accordion
-            const collapse = accordion.nextElementSibling;
-
-            if (collapse) {
-                const isActive = collapse.classList.contains("show");
-                // Close all accordions
-                accordions.forEach((acc) => {
-                    acc.classList.add("collapsed");
-                    const siblingCollapse = acc.nextElementSibling;
-                    if (siblingCollapse) siblingCollapse.classList.remove("show");
-                });
-
-                // Toggle the clicked accordion
-                if (!isActive) {
-                    accordion.classList.remove("collapsed");
-                    collapse.classList.add("show");
-                }
-            }
-        });
+      accordion.addEventListener("click", () => {
+        // Toggle clicked accordion
+        const collapse = accordion.nextElementSibling;
+  
+        if (collapse) {
+          // Close all accordions
+          accordions.forEach((acc) => {
+            acc.classList.remove("collapsed");
+            const siblingCollapse = acc.nextElementSibling;
+            if (siblingCollapse) siblingCollapse.classList.remove("show");
+          });
+  
+          // Toggle the clicked accordion
+          const isActive = accordion.classList.contains("collapsed");
+          if (!isActive) {
+            accordion.classList.remove("collapsed");
+            collapse.classList.add("show");
+          } else {
+            accordion.classList.add("collapsed");
+            collapse.classList.remove("show");
+          }
+        }
+      });
     });
-
-});
+  });
 
 // Benefits Section
 document.addEventListener("DOMContentLoaded", () => {
@@ -131,3 +133,28 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById('pageNumber').textContent = pageNumber;
         }
     });
+
+    let currentSlide = 0;
+
+function changeSlide(direction) {
+    const slides = document.querySelectorAll('.slider-image');
+
+    // Update current slide index
+    currentSlide += direction;
+
+    // Wrap around slides
+    if (currentSlide >= slides.length) {
+        currentSlide = 0;
+    } else if (currentSlide < 0) {
+        currentSlide = slides.length - 1;
+    }
+
+    // Move the slide
+    const slider = document.querySelector('.slider');
+    slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+}
+
+// Optional: Auto change slides every 5 seconds
+setInterval(() => {
+    changeSlide(1);
+}, 5000);

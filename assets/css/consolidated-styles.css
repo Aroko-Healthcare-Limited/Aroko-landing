@@ -88,23 +88,7 @@ button {
     }
 }
 
-/* CSS 3 */
-.accordion-button:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.5); /* Pink shadow */
-}
-
-.accordion-header button:hover {
-    color: #ec4899; /* Pink hover color */
-}
-
-.accordion-body {
-    border-left: 3px solid #ec4899; /* Pink border indicator */
-    padding: 1rem;
-    background: #f9fafb; /* Light gray */
-    border-radius: 0.5rem;
-}
-
+/* Footer Section */
 footer {
     @apply bg-gray-800 text-white py-10;
   
@@ -179,28 +163,6 @@ section {
     }
 }
 
-.accordion {
-    @apply space-y-4;
-  
-    .accordion-header {
-        @apply text-lg font-semibold text-gray-800 cursor-pointer;
-    }
-  
-    .accordion-button {
-        @apply bg-white border-none py-3 px-4 shadow-sm rounded-md text-left w-full transition-all duration-300;
-        &:hover {
-            @apply bg-gray-100 text-pink-500;
-        }
-    }
-  
-    .accordion-collapse {
-        @apply overflow-hidden transition-all duration-300;
-    }
-  
-    .accordion-body {
-        @apply bg-gray-50 px-4 py-2 rounded-md shadow-inner text-gray-600;
-    }
-}
 
 /* Section Title and Progress Bar */
 .section-title {
@@ -272,4 +234,51 @@ ul li {
 }
 .stars i {
     color: gold;
+}
+
+/* About Hero Section */
+.slider-container {
+    position: relative;
+    max-width: 800px; /* Adjust width as necessary */
+    margin: 0 auto; /* Center the slider */
+    overflow: hidden; /* Hide overflow */
+}
+
+.slider {
+    display: flex; /* Align images in a row */
+    transition: transform 0.5s ease; /* Smooth transition */
+}
+
+.slider-image {
+    min-width: 100%; /* Each image takes full width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button.prev {
+    left: 10px; /* Position left */
+}
+
+button.next {
+    right: 10px; /* Position right */
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(255, 255, 255, 1); /* Change background on hover */
+}
+
+.overview-item.selected {
+    background-color: rgba(243, 232, 241, 0.5); /* Light pink background */
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
