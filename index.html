@@ -443,15 +443,15 @@
             <!-- Individual -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden">
                 <img src="./assets/images/images/man-1.png" alt="Individual" class="w-full h-64 object-cover">
-                <div class="p-6 text-center">
+                <div class="p-6 text-justify-between">
                     <h3 class="text-lg font-semibold text-gray-800">Individual</h3>
-                    <p class="text-gray-600 mt-2">Manage your personal healthcare plan effortlessly. Select from our range of plans—Aroko Advantage, Aroko Essential, or Aroko Premium—to suit your health requirements. With your account, you can stay updated on your health journey.</p>
+                    <p class="text-gray-600 mt-2">Manage your personal healthcare plan effortlessly. Select from our range of plans: <em>Advantage, Aroko Essential, or Aroko Premium</em> suit your health requirements. With your account, you can stay updated on your health journey.</p>
                 </div>
             </div>
             <!-- Someone Else -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden">
                 <img src="./assets/images/images/colored-hair.png" alt="Someone Else" class="w-full h-64 object-cover">
-                <div class="p-6 text-center">
+                <div class="p-6 text-justify-between">
                     <h3 class="text-lg font-semibold text-gray-800">Someone Else</h3>
                     <p class="text-gray-600 mt-2">Extend the gift of health to others. Our platform allows you to subscribe to a healthcare plan on behalf of someone else, such as a neighbor or a community member in need. Simply provide their necessary details, choose the appropriate plan, and manage their healthcare services through your account.</p>
                 </div>
@@ -459,7 +459,7 @@
             <!-- Friends & Family -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden">
                 <img src="./assets/images/images/family-1.png" alt="Friends & Family" class="w-full h-64 object-cover">
-                <div class="p-6 text-center">
+                <div class="p-6 text-justify-between">
                     <h3 class="text-lg font-semibold text-gray-800">Friends & Family</h3>
                     <p class="text-gray-600 mt-2">Ensure your loved ones receive the best care by managing their subscriptions under your account. Whether it's for family members or close friends, you can oversee their healthcare plans, monitor appointments, and keep track of their medical needs, all in one place.</p>
                 </div>
@@ -476,47 +476,63 @@
                 <h2 class="text-4xl font-bold text-gray-800 mb-5">Common Concerns and Helpful Answers</h2>
                 <p class="text-gray-600 mb-3">Here is the list of FAQ's about us and how we work. Got more questions? Feel free to reach out to us.</p>
             </div>
-            <!-- Right Section -->
-<div>
-    <div class="accordion" id="faqAccordion">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="faqHeading1">
-                <button class="accordion-button text-gray-800 font-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
-                    How can Aroko Health help my business?
-                </button>
-            </h2>
-            <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
-                <div class="accordion-body text-gray-600">
-                    Tested and Trusted by thousands of users, Aroko Health provides reliable access to funds. Think of a trusted payment service.
+            <!-- Right Column: Accordion -->
+            <div class="col-md-10">
+                <div class="accordion" id="faqAccordion">
+                    <!-- FAQ 1 -->
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header" id="faq1Header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                                How can Aroko Health help my business
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="faq1Header" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Tested and Trusted by thousands of users, Aroko Health provides reliable access to funds. Think of a trusted payment service.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FAQ 2 -->
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header" id="faq2Header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                                What is Aroko Health
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faq2Header" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Aroko Health is an innovative health management platform offering affordable and reliable healthcare solutions for individuals and businesses.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FAQ 3 -->
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header" id="faq3Header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                How secure is Aroko Health platform
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faq3Header" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Aroko Health employs state-of-the-art encryption and security protocols to ensure the safety of your personal and financial information.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FAQ 4 -->
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header" id="faq4Header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                                What services does Aroko Health provide
+                            </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse" aria-labelledby="faq4Header" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Aroko Health provides healthcare plans, telemedicine services, preventive care, and seamless payment solutions tailored to your needs.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="faqHeading2">
-                <button class="accordion-button collapsed text-gray-800 font-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
-                    What is Aroko Health?
-                </button>
-            </h2>
-            <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
-                <div class="accordion-body text-gray-600">
-                    Aroko Health offers affordable and accessible healthcare plans designed to meet your needs.
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="faqHeading3">
-                <button class="accordion-button collapsed text-gray-800 font-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
-                    How secure is Aroko Health's platform?
-                </button>
-            </h2>
-            <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
-                <div class="accordion-body text-gray-600">
-                    Aroko Health's platform uses advanced encryption and secure protocols to ensure data privacy and security.
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
         </div>
     </div>
 </section>
@@ -530,9 +546,9 @@
                 <div class="flex space-x-4 mt-6">
                     <a href="#" class="text-green-500 text-2xl"><i class="fab fa-whatsapp"></i></a>
                     <a href="#" class="text-blue-500 text-2xl"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="text-pink-500 text-2xl"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="text-black text-2xl"><i class="fab fa-x-twitter"></i></a>
-                    <a href="#" class="text-blue-700 text-2xl"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/aroko.health/" class="text-pink-500 text-2xl"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/ArokoHealth" class="text-black text-2xl"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/aroko-health/" class="text-blue-700 text-2xl"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
             <div>
@@ -591,9 +607,9 @@
             <div>
                 <h4 class="text-white font-semibold mb-4">Follow</h4>
                 <ul>
-                    <li><a href="#" class="hover:underline">Twitter</a></li>
-                    <li><a href="#" class="hover:underline">Instagram</a></li>
-                    <li><a href="#" class="hover:underline">LinkedIn</a></li>
+                    <li><a href="https://x.com/ArokoHealth" class="hover:underline">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/aroko.health/" class="hover:underline">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/company/aroko-health/" class="hover:underline">LinkedIn</a></li>
                 </ul>
             </div>
             <div>
