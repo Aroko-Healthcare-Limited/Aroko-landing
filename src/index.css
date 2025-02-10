@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #020817;
+    --card: #ffffff;
+    --card-foreground: #020817;
+    --primary: #ec4899;
+    --primary-foreground: #ffffff;
+    --muted-foreground: #64748b;
+  }
+
+  .dark {
+    --background: #020817;
+    --foreground: #ffffff;
+    --card: #1e293b;
+    --card-foreground: #ffffff;
+    --primary: #ec4899;
+    --primary-foreground: #ffffff;
+    --muted-foreground: #94a3b8;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  h1 {
+    @apply text-center leading-tight;
+  }
+
+  section {
+    @apply py-16;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-primary text-primary-foreground rounded-lg shadow-lg 
+           hover:opacity-90 transition duration-300 transform hover:scale-105;
+  }
+}
