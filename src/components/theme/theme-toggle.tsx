@@ -1,35 +1,31 @@
-import { Moon, Sun, Laptop } from "lucide-react"
-import { useTheme } from "./theme-provider"
+import { useEffect, useState } from "react"
+import { Moon, Sun } from "lucide-react"
 
 export function ThemeToggle() {
-  const { theme, setTheme } = useTheme()
+  const [isDark, setIsDark] = useState(
+    () => localStorage.getItem("theme") === "dark"
+  )
+
+  useEffect(() => {
+    if (isDark) {
+      document.documentElement.classList.add("dark")
+      localStorage.setItem("theme", "dark")
+    } else {
+      document.documentElement.classList.remove("dark")
+      localStorage.setItem("theme", "light")
+    }
+  }, [isDark])
 
   return (
-    <div className="flex items-center space-x-2">
-      <button
-        onClick={() => setTheme("light")}
-        className={`p-2 rounded-lg ${
-          theme === "light" ? "bg-gray-200 dark:bg-gray-700" : ""
-        }`}
-      >
-        <Sun className="h-5 w-5" />
-      </button>
-      <button
-        onClick={() => setTheme("dark")}
-        className={`p-2 rounded-lg ${
-          theme === "dark" ? "bg-gray-200 dark:bg-gray-700" : ""
-        }`}
-      >
-        <Moon className="h-5 w-5" />
-      </button>
-      <button
-        onClick={() => setTheme("system")}
-        className={`p-2 rounded-lg ${
-          theme === "system" ? "bg-gray-200 dark:bg-gray-700" : ""
-        }`}
-      >
-        <Laptop className="h-5 w-5" />
-      </button>
-    </div>
+    <button
+      onClick={() => setIsDark(!isDark)}
+      className="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 transition-colors hover:bg-gray-300 dark:hover:bg-gray-600"
+    >
+      {isDark ? (
+        <Moon className="h-5 w-5 text-gray-200" />
+      ) : (
+        <Sun className="h-5 w-5 text-yellow-500" />
+      )}
+    </button>
   )
 }

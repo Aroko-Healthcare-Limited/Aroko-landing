@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Menu } from 'lucide-react';
+import { ThemeToggle } from "../theme/theme-toggle";
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -34,6 +35,8 @@ export function Header() {
           <a href="#plans" className="bg-pink-500 text-white rounded-lg px-4 py-2 hover:bg-pink-600">
             Plans
           </a>
+
+          <ThemeToggle /> {/* Add Theme Toggle here */}
         </nav>
 
         {/* Mobile Menu Button */}
@@ -69,6 +72,8 @@ export function Header() {
             <a href="#plans" className="bg-pink-500 text-white rounded-lg px-4 py-2 hover:bg-pink-600 text-center">
               Plans
             </a>
+
+            <ThemeToggle /> {/* Add Theme Toggle here */}
           </nav>
         </div>
       )}
