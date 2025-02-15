@@ -1,0 +1,100 @@
+/* Board Members & Management Team Section */
+.board-members, 
+.management-team {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.board-members h2, 
+.management-team h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+/* Card Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* Member Cards */
+.member-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.member-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.member-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.member-info h5 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.member-info p {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons i {
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.social-icons i:hover {
+    transform: scale(1.1);
+}
+
+/* Active Indicator */
+.active-indicator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #6c5ce7;
+    display: none;
+}
+
+.member-card:first-child .active-indicator {
+    display: block;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .member-card img {
+        height: 200px;
+    }
+}
